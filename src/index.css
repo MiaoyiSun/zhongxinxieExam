@@ -1,0 +1,75 @@
+/* 基础重置 */
+:root {
+  --primary: #2563eb;        /* 主蓝色 */
+  --primary-hover: #1d4ed8;
+  --bg-main: #f8fafc;        /* 浅灰色背景 */
+  --card-bg: #ffffff;
+  --text-main: #1e293b;
+  --success: #22c55e;
+  --error: #ef4444;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+}
+
+/* 按钮基础样式 */
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+/* 选项按钮样式 */
+.option-btn {
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 0.75rem;
+  background: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.option-btn.selected {
+  border-color: var(--primary);
+  background-color: #eff6ff;
+  font-weight: bold;
+}
+
+.option-btn.correct {
+  background-color: #dcfce7;
+  border-color: var(--success);
+  color: #166534;
+}
+
+.option-btn.wrong {
+  background-color: #fee2e2;
+  border-color: var(--error);
+  color: #991b1b;
+}
+
+/* 卡片容器 */
+.quiz-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f1f5f9;
+}
